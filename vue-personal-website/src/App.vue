@@ -1,18 +1,27 @@
+<!-- src/App.vue -->
 <template>
-  <div class="header-icon"> 
-  <img alt="Vue logo" src="./assets/logo.png" class="mutual-icon">
-  <p>Toby's personal website</p>
+  <div id="app">
+    <div class="header-icon"> 
+      <img alt="Vue logo" src="./assets/logo.png" class="mutual-icon">
+      <p>Toby's personal website</p >
+    </div>
+    <router-view/>
   </div>
-  <Homepage/>
 </template>
 
 <script>
 import Homepage from './components/Homepage.vue'
+import Education from './components/Education.vue'
+import SkillandIntro from './components/SkillandIntro.vue'
+import WorkingExp from './components/WorkingExp.vue'
 
 export default {
   name: 'App',
   components: {
-    Homepage
+    Homepage,
+    Education,
+    SkillandIntro,
+    WorkingExp
   }
 }
 </script>
@@ -26,12 +35,12 @@ export default {
   color: #2c3e50;
 }
 
-.header-icon{
+.header-icon {
   display: flex;
   align-items: center;
 }
 
-.mutual-icon{
-  width:50px;
+.mutual-icon {
+  width: 50px;
 }
 </style>

@@ -1,23 +1,21 @@
 <template>
   <div class="hello">
-    <img class="icon" src="../assets/Icon.png">
+    <img class="icon" src="../assets/Icon.png" />
     <h1>{{ title }}</h1>
-    <p>{{ introduction }}</p>
+    <p>{{ introduction }}</p >
     <div class="button-area">
-    <a href="">Educational Experience</a>
-    <a href="">Working Experience</a>
-    <a href="">Skill and Introduction</a>
+      <router-link to="/Education">Educational Experience</router-link>
+      <router-link to="/Work">Working Experience</router-link>
+      <router-link to="/Skill">Skill and Introduction</router-link>
     </div>
-
-
   </div>
 </template>
 
 <script>
 export default {
   name: 'Homepage',
-  data(){
-    return{
+  data() {
+    return {
       title: "Jingtao personal website",
       introduction: "Welcome to my personal website, and wish that you can know me better via this website"
     }
@@ -25,10 +23,12 @@ export default {
 }
 </script>
 
-<style>
-.icon{
+<style scoped>
+.icon {
   width: 200px;
-  border-radius: 50%;
+  height: auto;
 }
-
+.button-area {
+  margin-top: 20px;
+}
 </style>
