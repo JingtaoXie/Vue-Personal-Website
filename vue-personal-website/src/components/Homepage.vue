@@ -5,7 +5,11 @@
     <p>{{ introduction }}</p >
     <div class="button-area">
       <router-link to="/Education">Educational Experience</router-link>
+    </div>
+    <div class="button-area">
       <router-link to="/Work">Working Experience</router-link>
+    </div>
+    <div class="button-area">
       <router-link to="/Skill">Skill and Introduction</router-link>
     </div>
   </div>
@@ -24,9 +28,13 @@ export default {
 </script>
 
 <style scoped>
+.hello{
+  margin-top: 50px;
+}
 .icon {
   width: 200px;
   height: auto;
+  border-radius: 50%;
 }
 .button-area {
   margin-top: 20px;
