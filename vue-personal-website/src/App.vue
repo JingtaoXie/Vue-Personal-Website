@@ -1,11 +1,11 @@
 <!-- src/App.vue -->
 <template>
   <div id="app">
-    <div class="header-icon"> 
+    <div class="header-icon">
       <img alt="Vue logo" src="./assets/logo.png" class="mutual-icon">
-      <p>Toby's personal website</p >
+      <p>Toby's personal website</p>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -27,6 +27,11 @@ export default {
 </script>
 
 <style>
+body{
+  background: linear-gradient(270deg, #fb957c, #feb47b);
+  background-size: 800% 800%;
+  animation: gradientBackground 5s ease infinite;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,6 +39,37 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+.fade-out {
+  font-size: 2rem;
+  color: white;
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 
 .header-icon {
   display: flex;

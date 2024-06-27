@@ -122,7 +122,6 @@ export default {
 #introduction-card {
     justify-items: justify;
     align-items: center;
-    margin: 20px;
     background-color: aliceblue;
     border-radius: 20px;
     padding: 10px;
