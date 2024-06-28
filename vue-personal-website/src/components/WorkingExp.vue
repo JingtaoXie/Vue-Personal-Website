@@ -2,21 +2,21 @@
     <div id="content">
         <h1>My Working Experience</h1>
         <div class="internship-card">
-            <img src="../assets/OSRAM.png" width="300px">
+            <img src="../assets/OSRAM.png" width="300px" class="company-logo">
             <div class="description">
                 <h2>{{ Companyname1 }}</h2>
                 <h3>Title: {{ Role1 }}</h3>
-                <h4>Responsibilities: {{ JobDescription1 }}</h4>
-                <h4>Learning Skills: {{ LearningSkills1 }}</h4>
+                <p>Responsibilities: {{ JobDescription1 }}</p>
+                <p>Learning Skills: {{ LearningSkills1 }}</p>
             </div>
         </div>
         <div class="internship-card">
-            <img src="../assets/coscologo.png" width="300px">
+            <img src="../assets/coscologo.png" width="300px" class="company-logo">
             <div class="description">
                 <h2>{{ Companyname2 }}</h2>
                 <h3>Title: {{ Role2 }}</h3>
-                <h4>Responsibilities: {{ JobDescription2 }}</h4>
-                <h4>LearningSkills: {{ LearningSkills2 }}</h4>
+                <p>Responsibilities: {{ JobDescription2 }}</p>
+                <p>LearningSkills: {{ LearningSkills2 }}</p>
             </div>
         </div>
     </div>
@@ -42,19 +42,61 @@ export default {
 </script>
 
 <style>
-.internship-card {
-    display: flex;
-    justify-items: justify;
-    align-items: center;
-    margin: 20px;
-    background-color: aliceblue;
-    border-radius: 20px;
-    height: 250px;
-    padding: 10px;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
+#content {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.internship-card {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  background-color: aliceblue;
+  border-radius: 20px;
+  height: 250px;
+  padding: 20px;
+  border: 2px solid #333;
+  max-width: 1000px;
+}
+
+.company-logo {
+  width: 300px;
+  height: auto;
 }
 
 .description {
-    text-align: left;
+  text-align: left;
+  padding-left: 20px;
 }
+
+@media (max-width: 600px) {
+  .internship-card {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .company-logo {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .description {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+
+
 </style>

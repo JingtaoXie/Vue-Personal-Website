@@ -123,6 +123,29 @@ export default {
   display: inline;
   margin-left: 5px;
 
-
 }
+@media (max-width: 600px) {
+  #container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "contact-info";
+  }
+
+  #contact-info {
+    margin: 0 auto; /* 确保在小屏幕上居中 */
+    width: 90%;
+  }
+
+  .button-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+
 </style>

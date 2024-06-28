@@ -178,4 +178,32 @@ export default {
 .description {
     margin-left: 20px;
 }
+@media (max-width: 600px) {
+    .qualiandskill {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .qualification, .skills {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #project-matrix {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .project-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .description {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
 </style>
