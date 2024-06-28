@@ -27,7 +27,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div id="project-card">
             <h1>My Project</h1>
             <div id="project-matrix">
@@ -79,7 +79,9 @@
                 </div>
             </div>
         </div>
-        <p>More info can be browsed in <a href="https://www.linkedin.com/in/jingtao-xie-559956284/">https://www.linkedin.com/in/jingtao-xie-559956284/</a></p>
+        <p>More info can be browsed in <a
+                href="https://www.linkedin.com/in/jingtao-xie-559956284/">https://www.linkedin.com/in/jingtao-xie-559956284/</a>
+        </p>
     </div>
 </template>
 
@@ -123,26 +125,32 @@ export default {
     justify-items: justify;
     align-items: center;
     background-color: aliceblue;
-    border-radius: 20px;
     padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
 }
 
 #introduction-content {
     text-align: left;
 
 }
-.qualiandskill{
+
+.qualiandskill {
     display: flex;
     width: 100%;
     text-align: left;
     background-color: aliceblue;
     border-radius: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
 }
-.qualification{
+
+.qualification {
     width: 100%;
     margin-left: 20px;
 }
-.skills{
+
+.skills {
     width: 100%;
 }
 
@@ -158,12 +166,13 @@ export default {
 
 .project-item {
     background-color: aliceblue;
-    border: 1px solid #333;
+    border: 2px solid #333;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     gap: 10px;
+    border-radius: 5px;
 }
 
 .description {

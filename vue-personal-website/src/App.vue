@@ -1,9 +1,12 @@
 <!-- src/App.vue -->
 <template>
   <div id="app">
-    <div class="header-icon">
-      <img alt="Vue logo" src="./assets/logo.png" class="mutual-icon">
-      <p>Toby's personal website</p>
+    <button @click="toggleMenu" class="menu-button">Menu</button>
+    <div v-if="menuVisible" class="menu">
+      <router-link to="/" class="menu-item">Home</router-link>
+      <router-link to="/Education" class="menu-item">Toby's educational experience</router-link>
+      <router-link to="/Work" class="menu-item">Toby's working experience</router-link>
+      <router-link to="/Skill" class="menu-item">Toby's detailed introduction</router-link>
     </div>
     <router-view />
   </div>
@@ -22,16 +25,27 @@ export default {
     Education,
     SkillandIntro,
     WorkingExp
+  },
+  data() {
+    return {
+      menuVisible: false
+    }
+  },
+  methods: {
+    toggleMenu() {
+      this.menuVisible = !this.menuVisible;
+    }
   }
 }
 </script>
 
 <style>
-body{
+body {
   background: linear-gradient(270deg, #fb957c, #feb47b);
   background-size: 800% 800%;
   animation: gradientBackground 5s ease infinite;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -71,12 +85,40 @@ body{
 }
 
 
-.header-icon {
-  display: flex;
-  align-items: center;
+.menu-button {
+  background-color: aliceblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 5px;
 }
 
-.mutual-icon {
-  width: 50px;
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  color:#333;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
 }
+
+.menu-item {
+  padding: 10px 20px;
+  color:#333;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  background-color: lightyellow;
+}
+
 </style>

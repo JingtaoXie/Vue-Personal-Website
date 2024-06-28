@@ -44,9 +44,11 @@ export default {
             BNUZ1Coursework: "Logistic Information System, International Trade and Agency, Supply Chain Management, etc.",
             BNUZ1TechnicalSkills: "Flexsim, Microsoft Access, SPSS statstic, etc.",
             BNUZ2Coursework: "Financial Engineering, Investment, Commercial Law",
+            menuVisible: false
         }
     }
-}
+};
+
 </script>
 
 <style>
@@ -59,7 +61,9 @@ export default {
     border-radius: 20px;
     height: 200px;
     padding: 10px;
-    
+    border: 2px solid #333;
+    border-radius: 5px;
+
 }
 
 .description {
