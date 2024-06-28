@@ -32,7 +32,7 @@
             <h1>My Project</h1>
             <div id="project-matrix">
                 <div class="project-item">
-                    <img src="../assets/pokemon.png" width="250px">
+                    <img src="../assets/pokemon.png" width="250px" class="project-icon">
                     <div class="description">
                         <h3>Project 1: {{ Project1 }}</h3>
                         <h5>{{ Association1 }}</h5>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="project-item">
-                    <img src="../assets/group3blog.png" width="250px">
+                    <img src="../assets/group3blog.png" width="250px" class="project-icon">
                     <div class="description">
                         <h3>Project 2: {{ Project2 }}</h3>
                         <h5>{{ Association2 }}</h5>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="project-item">
-                    <img src="../assets/Calculator.png" width="250px">
+                    <img src="../assets/Calculator.png" width="250px" class="project-icon">
                     <div class="description">
                         <h3>Project 3: {{ Project3 }}</h3>
                         <!-- <h5>{{ Association3 }}</h5> -->
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="project-item">
-                    <img src="../assets/hertzcms.png" width="250px">
+                    <img src="../assets/hertzcms.png" width="250px" class="project-icon">
                     <div class="description">
                         <h3>Project 4: {{ Project4 }}</h3>
                         <h5>{{ Association4 }}</h5>
@@ -194,9 +194,10 @@ export default {
         grid-template-rows: auto;
     }
 
+
     .project-item {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         text-align: center;
     }
 
