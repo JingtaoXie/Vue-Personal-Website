@@ -29,7 +29,7 @@
         </div>
 
         <div id="project-card">
-            <h1>My Project</h1>
+            <h1 class="title">My Project</h1>
             <div id="project-matrix">
                 <div class="project-item">
                     <img src="../assets/pokemon.png" width="250px" class="project-icon">

@@ -1,5 +1,6 @@
 <!-- src/App.vue -->
 <template>
+  <title>Toby Website</title>
   <div id="app">
     <button @click="toggleMenu" class="menu-button">Menu</button>
     <div v-if="menuVisible" class="menu">
