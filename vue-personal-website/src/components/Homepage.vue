@@ -124,7 +124,7 @@ export default {
   margin-left: 5px;
 
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -132,7 +132,7 @@ export default {
   }
 
   #contact-info {
-    margin: 0 auto; /* 确保在小屏幕上居中 */
+    margin: 0 auto; 
     width: 90%;
   }
 

@@ -8,6 +8,7 @@
       <router-link to="/Education" class="menu-item">Toby's educational experience</router-link>
       <router-link to="/Work" class="menu-item">Toby's working experience</router-link>
       <router-link to="/Skill" class="menu-item">Toby's detailed introduction</router-link>
+      <router-link to="/Aboutme" class="menu-item">About Me</router-link>
     </div>
     <router-view />
   </div>
@@ -18,6 +19,7 @@ import Homepage from './components/Homepage.vue'
 import Education from './components/Education.vue'
 import SkillandIntro from './components/SkillandIntro.vue'
 import WorkingExp from './components/WorkingExp.vue'
+import Aboutme from './components/Aboutme.vue'
 
 export default {
   name: 'App',
@@ -25,7 +27,8 @@ export default {
     Homepage,
     Education,
     SkillandIntro,
-    WorkingExp
+    WorkingExp,
+    Aboutme
   },
   data() {
     return {

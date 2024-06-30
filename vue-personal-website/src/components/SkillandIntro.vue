@@ -1,11 +1,5 @@
 <template>
     <div id="content">
-        <h1>My Introduction</h1>
-        <div id="introduction-card">
-            <div id="introduction-content">
-                <p>{{ Introduction }}</p>
-            </div>
-        </div>
         <h1>My Qualification and Techical Skills</h1>
         <div class="qualiandskill">
             <div class="qualification">
@@ -178,7 +172,7 @@ export default {
 .description {
     margin-left: 20px;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .qualiandskill {
         flex-direction: column;
         text-align: center;
@@ -193,7 +187,6 @@ export default {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-
 
     .project-item {
         flex-direction: column;

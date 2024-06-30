@@ -68,7 +68,7 @@ export default {
     text-align: left;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .school-card {
     flex-direction: column;
     align-items: center;

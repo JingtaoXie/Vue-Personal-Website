@@ -3,6 +3,7 @@ import Homepage from '@/components/Homepage.vue'
 import Education from '@/components/Education.vue'
 import SkillAndIntro from '@/components/SkillandIntro.vue'
 import WorkingExp from '@/components/WorkingExp.vue'
+import Aboutme from '@/components/Aboutme.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/Work',
     name: 'WorkingExp',
     component: WorkingExp
+  },
+  {
+    path:'/Aboutme',
+    name: 'Aboutme',
+    component: Aboutme
   }
 ]
 
