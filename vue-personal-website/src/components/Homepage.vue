@@ -28,8 +28,11 @@
       <router-link to="/Work" class="link"><img src="../assets/case.png" width="50px">
         <h5>Working Experience</h5>
       </router-link>
-      <router-link to="/Skill" class="link"><img src="../assets/profile.png" width="50px">
-        <h5>Detailed Introduction</h5>
+      <router-link to="/Skill" class="link"><img src="../assets/Engineering.png" width="50px">
+        <h5>Skill and Projects</h5>
+      </router-link>
+      <router-link to="/Aboutme" class="link"><img src="../assets/profile.png" width="50px">
+        <h5>About Me</h5>
       </router-link>
     </div>
     
@@ -73,6 +76,7 @@ export default {
   text-decoration: none;
   color: #333;
   transition: transform 0.2s;
+  width: 180px;
 }
 
 .link:active {

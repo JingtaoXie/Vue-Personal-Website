@@ -45,7 +45,7 @@ export default {
 
 <style>
 body {
-  background: linear-gradient(270deg, #fb957c, #feb47b);
+  background: linear-gradient(270deg, #f6714f, #feb47b);
   background-size: 800% 800%;
   animation: gradientBackground 5s ease infinite;
 }
@@ -61,7 +61,7 @@ body {
 .fade-out {
   font-size: 2rem;
   color: white;
-  animation: fadeOut 2s forwards;
+  animation: fadeOut 1s forwards;
 }
 
 @keyframes gradientBackground {
