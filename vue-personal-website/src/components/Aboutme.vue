@@ -1,6 +1,6 @@
 <template>
     <div id="content">
-        <h1>About me</h1>
+        <h1 id="title">About me</h1>
         <div id="imgandintroduction">
             <el-card style="max-width: 300px" id="card" height="200px">
                 <template #header>Photo token in Taupo, NZ</template>
@@ -32,51 +32,54 @@ export default {
 
 <style scoped>
 #imgandintroduction {
-  display: grid;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: ". img intro .";
-  gap: 20px; 
-  padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". img intro .";
+    gap: 20px;
+    padding: 20px;
 }
 
 #card {
-  grid-area: img;
-  width: 100%; 
-  margin-left: auto;
-  margin-right: auto;
+    grid-area: img;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #intro {
-  grid-area: intro;
-  width: 100%; 
-  text-align: left;
-  background-color: aliceblue;
-  border: 2px solid #333;
-  border-radius: 5px;
-  padding: 20px; 
+    grid-area: intro;
+    width: 100%;
+    text-align: left;
+    background-color: aliceblue;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 @media (max-width: 800px) {
-  #imgandintroduction {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "img"
-      "intro";
-    gap: 10px; 
-  }
+    #title {
+        margin-top: 60px;
+    }
 
-  #card {
-    width: 100%; 
-    margin: 0 auto 10px; 
-  }
+    #imgandintroduction {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "img"
+            "intro";
+        gap: 10px;
+    }
 
-  #intro {
-    width: 80%; 
-    text-align: left;
-    margin: 0 auto 10px; 
-  }
+    #card {
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+
+    #intro {
+        width: 80%;
+        text-align: left;
+        margin: 0 auto 10px;
+    }
 }
-
 </style>

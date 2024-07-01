@@ -69,20 +69,24 @@ export default {
 }
 
 @media (max-width: 800px) {
-  .school-card {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
+    #header {
+        margin-top: 60px;
+    }
 
-  .school-logo {
-    width: 100%;
-    max-width: 200px;
-  }
+    .school-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
 
-  .description {
-    padding-left: 0;
-    text-align: center;
-  }
+    .school-logo {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .description {
+        padding-left: 0;
+        text-align: center;
+    }
 }
 </style>

@@ -29,7 +29,7 @@
         <h5>Working Experience</h5>
       </router-link>
       <router-link to="/Skill" class="link"><img src="../assets/Engineering.png" width="50px">
-        <h5>Skill and Projects</h5>
+        <h5>Skills and Projects</h5>
       </router-link>
       <router-link to="/Aboutme" class="link"><img src="../assets/profile.png" width="50px">
         <h5>About Me</h5>
@@ -129,6 +129,7 @@ export default {
 
 }
 @media (max-width: 800px) {
+
   #container {
     grid-template-columns: 1fr;
     grid-template-areas:

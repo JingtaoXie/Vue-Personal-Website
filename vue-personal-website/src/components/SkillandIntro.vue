@@ -1,6 +1,6 @@
 <template>
     <div id="content">
-        <h1>My Qualification and Techical Skills</h1>
+        <h1 id="title">My Qualification and Techical Skills</h1>
         <div class="qualiandskill">
             <div class="qualification">
                 <h2>My Qualificatios</h2>
@@ -100,13 +100,7 @@ export default {
             Project4: "HertzRide Contract Management Mobile APP",
             Association4: "Associated with The University of Auckland, INFOSYS704",
             Description4: "An application which can allow users browsing, modifying, deleting contracts, and also do some relevant actions. This app has both mobile and web version, and is completed by SAP build appgyver. Its function compliment and data transferring are mainly drove by Javascript and REST API.",
-            Stack4: "SAP appgyver, Javascript, REST"
-
-
-
-
-
-
+            Stack4: "SAP appgyver, Javascript, REST API"
 
 
         }
@@ -173,6 +167,9 @@ export default {
     margin-left: 20px;
 }
 @media (max-width: 800px) {
+    #title {
+        margin-top: 60px;
+    }
     .qualiandskill {
         flex-direction: column;
         text-align: center;

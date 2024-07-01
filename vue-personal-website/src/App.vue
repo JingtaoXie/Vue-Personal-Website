@@ -5,9 +5,9 @@
     <button @click="toggleMenu" class="menu-button">Menu</button>
     <div v-if="menuVisible" class="menu">
       <router-link to="/" class="menu-item">Home</router-link>
-      <router-link to="/Education" class="menu-item">Toby's educational experience</router-link>
-      <router-link to="/Work" class="menu-item">Toby's working experience</router-link>
-      <router-link to="/Skill" class="menu-item">Toby's detailed introduction</router-link>
+      <router-link to="/Education" class="menu-item">Educational Experience</router-link>
+      <router-link to="/Work" class="menu-item">Working Experience</router-link>
+      <router-link to="/Skill" class="menu-item">Skills and Projects </router-link>
       <router-link to="/Aboutme" class="menu-item">About Me</router-link>
     </div>
     <router-view />
@@ -101,6 +101,7 @@ body {
   color: #333;
   border: 2px solid #333;
   border-radius: 5px;
+  z-index: 1000;
 }
 
 .menu {
@@ -113,6 +114,7 @@ body {
   left: 10px;
   border: 2px solid #333;
   border-radius: 5px;
+  z-index: 999;
 }
 
 .menu-item {
