@@ -2,7 +2,7 @@
 This is a personal website for Jingtao Xie (the owner of this repository). 
 And the website is hosted in https://jingtao-website.vercel.app/
 
-# Using Techniques in this projects
+# Using Techniques in this project
 To build this website, there are several techniques are used in the website source code:
 1.Vue.js and Vue router (to build up the basic framework of the entire project and help linking different pages)
 2.Element plus (a Vue.js 3 UI library)
